@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$(uname -s)" = "Darwin" ]; then
+  # macOS
+  export PATH="/opt/homebrew/bin:$PATH"
+elif echo "$PATH" | grep -q "Windows"; then
+  # Windows Git Bash or similar
+  export PATH="/c/Program Files/nodejs:$PATH"
+fi
+
+echo "Running ESLint..."
+npm run lint

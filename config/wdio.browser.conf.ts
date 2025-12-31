@@ -21,9 +21,6 @@ export const config: WebdriverIO.Config = {
             browserName: "firefox",
         },
         {
-            browserName: "edge",
-        },
-        {
             "wdio:maxInstances": 1,
             browserName: "safari",
         },

@@ -14,6 +14,13 @@ export const config: WebdriverIO.Config = {
     // ============
     // For all capabilities please check
     // https://github.com/appium/appium-uiautomator2-driver
+     services: [
+        ['appium', {
+            args: {
+                allowInsecure: 'uiautomator2:chromedriver_autodownload',
+            }
+        }]
+    ],
     capabilities: [
         {
             // The defaults you need to have in your config
@@ -24,10 +31,10 @@ export const config: WebdriverIO.Config = {
 
             //
             // NOTE: Change this name according to the Emulator you have created on your local machine
-            "appium:deviceName": "Pixel_8_Pro_Android_15_API_35",
+            "appium:deviceName": "emulator-5554",
             //
             // NOTE: Change this version according to the Emulator you have created on your local machine
-            "appium:platformVersion": "15.0",
+            "appium:platformVersion": '16',
             "appium:orientation": "PORTRAIT",
             "appium:automationName": "UiAutomator2",
             // The path to the app

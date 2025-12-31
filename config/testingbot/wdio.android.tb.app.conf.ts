@@ -1,4 +1,4 @@
-import { config as baseConfig } from '../wdio.shared.conf';
+import { config as baseConfig } from '../wdio.shared.conf.js';
 
 export const config: WebdriverIO.Config = {
     ...baseConfig,
@@ -31,11 +31,11 @@ export const config: WebdriverIO.Config = {
     capabilities: [
         {
             // Set URL of the application under test
-            app: 'https://testingbot.com/appium/sample.apk',
+            "appium:app": 'https://testingbot.com/appium/sample.apk',
 
-            deviceName: 'Pixel 6',
+            "appium:deviceName": 'emulator-5554',
             platformName: 'Android',
-            version: '12.0',
+            "appium:platformVersion": '16',
         },
     ],
 };

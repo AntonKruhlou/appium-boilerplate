@@ -10,8 +10,8 @@ class DynamicPage extends Page {
     /**
      * define or overwrite page methods
      */
-    async open ():Promise<string> {
-        return super.open('dynamic_loading/2');
+    async open ():Promise<void> {
+        await super.open('dynamic_loading/2');
     }
 }
 

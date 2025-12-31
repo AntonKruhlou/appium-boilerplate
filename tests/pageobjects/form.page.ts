@@ -37,8 +37,8 @@ class FormPage extends Page {
     /**
      * define or overwrite page methods
      */
-    async open():Promise<string> {
-        return super.open('login');
+    async open():Promise<void> {
+        await super.open('login');
     }
 }
 

@@ -25,10 +25,10 @@ export const config: WebdriverIO.Config = {
 
             //
             // NOTE: Change this name according to the Simulator you have created on your local machine
-            "appium:deviceName": "iPhone 15",
+            "appium:deviceName": "iPhone 16",
             //
             // NOTE: Change this version according to the Simulator Version you have created on your local machine
-            "appium:platformVersion": "17.2",
+            "appium:platformVersion": "18.6",
             "appium:orientation": "PORTRAIT",
             "appium:automationName": "XCUITest",
             "appium:newCommandTimeout": 240,

@@ -10,8 +10,8 @@ class CheckboxPage extends Page {
     /**
      * overwrite specific options to adapt into page object
      */
-    async open (): Promise<string> {
-        return super.open('checkboxes');
+    async open (): Promise<void> {
+        await super.open('checkboxes');
     }
 }
 
