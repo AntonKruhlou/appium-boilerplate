@@ -14,7 +14,7 @@ export const config: Omit<WebdriverIO.Config, 'capabilities'> = {
             'appium',
             {
                 // This will use the globally installed version of Appium
-                command: 'appium',
+                // command: 'appium',
                 args: {
                     // This is needed to tell Appium that we can execute local ADB commands
                     // and to automatically download the latest version of ChromeDriver

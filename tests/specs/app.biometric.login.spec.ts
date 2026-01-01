@@ -13,6 +13,8 @@ import { BUNDLE_ID, PACKAGE_NAME } from '../helpers/Constants.js';
  * For iOS it's pretty straightforward, but for Android is more complex. There is a helper (Android Settings) that will handle all steps for
  * you for Android 9.0 (2018) till the latest version of Android.
  */
+
+// run android tests with this command in terminal: appium --allow-insecure=adb_shell 
 describe('WebdriverIO and Appium, when interacting with a biometric button,', () => {
     beforeEach(async () => {
         await goToLoginPage();

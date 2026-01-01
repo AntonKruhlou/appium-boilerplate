@@ -15,6 +15,7 @@ export const config: WebdriverIO.Config = {
     // For all capabilities please check
     // https://github.com/appium/appium-uiautomator2-driver
      services: [
+        ...baseConfig.services || [],
         ['appium', {
             args: {
                 allowInsecure: 'uiautomator2:chromedriver_autodownload',
